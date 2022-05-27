@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .formField{
+                margin: 10px;
+            }
+
+            label{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MOTOR LOAD CABLE & OCPD SIZER</h1>
+        <form method="POST">
+            <div class="formField">
+                <label for="equipmentName">Equipment Name</label>
+                <input type="text" id="equipmentName" name="equipmentName">
+            </div>
+
+            <div class="formField">            
+                <label for="equipmentLocation">Equipment Location</label>
+                <input type="text" id="equipmentLocation" name="equipmentLocation">
+            </div>
+            
+            <div class="formField">
+                <label for="equipmentTag">Equipment Tag</label>
+                <input type="text" id="equipmentTag" name="equipmentTag">
+            </div>
+
+            <div class="formField">
+                <label for="motorVoltage">Motor Voltage</label>
+                <input type="radio" id="120V" name="motorVoltage" value="120V">
+                <label for="120V">120V</label>
+                <input type="radio" id="208V" name="motorVoltage" value="208V">
+                <label for="208V">208V</label>
+                <input type="radio" id="600V" name="motorVoltage" value="600V">
+                <label for="600V">600V</label>
+            </div>
+
+            <div class="formField">
+                <label for="motorPhase">Motor Phase</label>s
+                <input type="radio" id="singlePhase" name="motorPhase" value="1">
+                <label for="singlePhase">1</label>
+                <input type="radio" id="threePhase" name="motorPhase" value="3">
+                <label for="threePhase">3</label>
+            </div>
+
+            <div class="formField">
+                <label for="motorHP">Motor HP Rating</label>
+                <input list="motorHP">
+                <datalist id="motorHP">
+                    <option value="0.5">
+                    <option value="0.75">
+                    <option value="1">
+                    <option value="1.5">
+                    <option value="2">
+                    <option value="3">
+                    <option value="5">
+                    <option value="7.5">
+                    <option value="10">
+                    <option value="15">
+                    <option value="20">
+                    <option value="25">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50">
+                    <option value="60">
+                    <option value="75">
+                    <option value="100">
+                    <option value="125">
+                    <option value="150">
+                    <option value="200">
+                    <option value="250">
+                    <option value="300">
+                    <option value="350">
+                    <option value="400">
+                    <option value="450">
+                    <option value="500">
+                </datalist>
+            </div>
+
+            <div class="formField">
+                <label for="conductorMaterial">Conductor Material</label>
+                <input list="conductorMaterial">
+                <datalist id="conductorMaterial">
+                    <option value="Aluminum">
+                    <option value="Copper">
+                </datalist>
+            </div>
+
+            <div class="formField">
+                <label for="conductorLength">Conductor Length (m)</label>
+                <input type="text" id="conductorLength" name="conductorLength">
+            </div>
+            <div class="formField">
+                <label for="voltageDrop">Acceptable Voltage Drop (%)</label>
+                <input type="text" id="voltageDrop" name="voltageDrop">
+            </div>
+            <button type="submit">submit</button>
+        </form>
+
+        <script src="index.js"></script>
+    </body>
+</html>
